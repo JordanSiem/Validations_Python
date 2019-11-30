@@ -1,0 +1,103 @@
+------------------------------DATA FORECAST------------------------------
+
+This is an approximation of your data file and how well it will be processed. For quality assurance, please continue to follow proper procedure
+ when evaluating your data.
+
+**Column list:
+
+Index(['ClaimHeaderID', 'AdjustmentToClaimID', 'ReversalToClaimID',
+       'AdjustmentTypeCode', 'AdjustmentSequence', 'ClaimTypeCode',
+       'ClaimReceivedDate', 'ClaimProcessedDate', 'PaidDate', 'TypeOfBillCode',
+       'DateFrom', 'DateThru', 'AdmitDate', 'DischargeDate',
+       'PrimaryDiagCodeSet', 'ICD', 'admitcodeset', 'admitdiag', 'DRGCodeset',
+       'DrgCode', 'PrimaryProcedureCodeSet', 'CPT', 'AdmitTypeCode',
+       'AdmitSource', 'Providername', 'BillingProviderAddress',
+       'BillingProviderCity', 'BillingProviderState', 'BillingProviderZip',
+       'BillingProviderNPI', 'BillingProviderTaxonomy',
+       'BillingProviderSpecialtyCodeSet', 'BillingProviderSpecialtiy',
+       'ReferringProviderNPI', 'ReferringProviderTaxonomyCode',
+       'ReferringProviderSpecialtyCodeSet', 'ReferringProviderSpecialtyCode',
+       'attendingProviderNPI', 'AttendingProviderTaxonomy',
+       'AttendignProviderSpecialtyCodeSet', 'AttendingProviderSpecialtyCode',
+       'OperatingProviderNPI', 'OperatingProviderTaxonomy',
+       'OperatingProviderSpecialtyCodeSet', 'OperatingProviderSpecialtyCode',
+       'AdmittingProviderNPI', 'AdmittingProviderTaxonomy',
+       'AdmittingProviderSpecialtyCodeSet', 'AdmittingProviderSpecialtyCode',
+       'PlaceOfServiceTypeCode', 'PlaceOfServiceNPI', 'POS',
+       'PlaceOfServiceAddress', 'PlaceOfServiceCity', 'PlaceOfServiceState',
+       'PlaceOfServiceZip', 'TIN', 'FilingOrder', 'TotalBilledAmount',
+       'TotalAllowedAmount', 'Copay', 'TotalCoinsuranceAmount',
+       'TotalDeductableAmount', 'TotalNotCoveredAmount', 'PaidAmount',
+       'DischargeDispositionCode', 'policynum', 'Network', 'Tier', 'claimline',
+       'RevCode', 'DOB', 'Gender', 'Relationship', 'Division', 'ClaimantID',
+       'HighClaimant', 'NetorkName', 'Benefit'],
+      dtype='object')
+
+**Number of Columns: 79
+**Number of Rows: 575105
+
+**ICD Valid Codes: 100.0%
+**Blank ICD Rows: 0.0%
+**CPT Valid Codes: 76.0%
+**Blank CPT Rows: 0.0%
+
+**Missing Columns: 
+
+Deductible
+Age
+Coinsurance
+ChargeAmount
+ProviderID
+ClaimType
+
+**Year/Month of Paid Dates: 
+
+[201807, 201808, 201809, 201810, 201811, 201812, 201901, 201902, 201903, 201904, 201905, 201906]
+Back up Paid Date Logic:
+
+
+Number of Null Paid Dates: 0
+***Data appears to have 12 or more months of data
+
+**POS Codes: 
+
+[nan]
+
+**Relationship Codes: 
+
+[18  1 19]
+
+**Gender Codes: 
+
+['M' 'F' ' ']
+
+**Network Codes: 
+
+['P' 'N']
+
+---------------------------COLUMN REPOSITORY---------------------------
+
+This program is currently able to evaluate the following column headers with some variation. If their are additional column headers that you'd like to be evaluated in the future,
+ please email a department Python SME.
+
+{'dateofbirth', 'claimantdob', 'dob', 'mbrbrthdt', 'birthdate'}
+{'age', 'claimantage', 'memberage'}
+{'relationship', 'relcode', 'relationshipcode', 'mbrrelcd', 'rel'}
+{'sex', 'claimantgender', 'gender', 'mbrrelcd', 'gendercode'}
+{'prindiagcd', 'diagnosisprimary', 'primarydx', 'icd9', 'icd10', 'icddiagnosisid', 'diagnosis', 'icd', 'diagnosiscode'}
+{'pos', 'poscode', 'placeofservice', 'hiaaposcode', 'placesrvccd', 'placeofservicename'}
+{'PaidDate', 'paymentdate', 'claimpaiddate', 'paiddt', 'paiddate', 'datepaid'}
+{'servicebegindate', 'datefrom', 'servicefrom', 'srvcstrtdt', 'fromdt', 'fromdate', 'servicestartdate', 'from'}
+{'datethru', 'servicethrough', 'todt', 'thrudate', 'thru', 'srvcenddt', 'serviceenddate'}
+{'claimantid', 'memberid', 'memid', 'subkey'}
+{'procedurecode', 'procedure', 'cpt4code', 'cptcode', 'primaryprocedurecode', 'prinproccd', 'cpt'}
+{'prov', 'providername', 'billingprovidername'}
+{'providerid', 'taxid', 'provid', 'billprovtaxidkey', 'providertin', 'taxidnbr'}
+{'revcode', 'rvnucd', 'rev', 'revenuecode'}
+{'totalpaidamount', 'paidamount', 'paidamt', 'paidamtincrd', 'paid'}
+{'chargeamt', 'chargedamount', 'charged'}
+{'claimtype', 'rectype', 'type'}
+{'network', 'innetworkind', 'networkindicator', 'ntwkind'}
+{'cpayamtincrd', 'copay', 'totalcopayamount'}
+{'coinsurance', 'coinsrnamtincrd'}
+{'deductible', 'ddctblamtincrd'}
